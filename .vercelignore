@@ -1,0 +1,11 @@
+node_modules
+.git
+.env
+*.tgz
+*.xlsx
+.DS_Store
+JOURNEY_SIMPLIFY.md
+NO_API_RESTORE.md
+*.log
+npm-debug.log*
+.vercel
