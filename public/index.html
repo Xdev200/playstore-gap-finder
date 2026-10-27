@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Store Gap Finder | Market Opportunity Scanner</title>
+    <meta name="description" content="Discover underserved Google Play Store niches with high download demand and poor ratings — then publish SEO-friendly weekly gap reports.">
+    <meta name="theme-color" content="#d8c8f0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-brand">
+                <div class="logo-badge" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2 L15 9 L22 10 L17 15 L18 22 L12 18 L6 22 L7 15 L2 10 L9 9 Z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">Play Store <span class="gradient-text">Gap Finder</span></h1>
+                    <p class="brand-subtitle">High demand · low satisfaction · market-ready opportunities</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a class="header-nav-link" href="#weeklyReportsSection" id="headerReportsLink">Reports</a>
+                <a class="header-nav-link" href="/reports" target="_blank" rel="noopener noreferrer" title="Browse published weekly reports">All reports ↗</a>
+                <div class="live-pill" id="systemStatusPill">
+                    <span class="status-dot pulse"></span>
+                    <span id="systemStatusText">Ready to Scan</span>
+                </div>
+                <div class="config-badge" id="activeConfigBadge" title="Current Active Parameters">
+                    <span class="cfg-code">IN</span>
+                    <span class="cfg-sep">•</span>
+                    <span class="cfg-rating">≤ 3.5★</span>
+                    <span class="cfg-sep">•</span>
+                    <span class="cfg-reviews">≥ 100 reviews</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero-strip" aria-label="Welcome">
+                <div class="hero-kicker">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2 L15 9 L22 10 L17 15 L18 22 L12 18 L6 22 L7 15 L2 10 L9 9 Z"></path></svg>
+                    Market opportunity scanner
+                </div>
+                <h2 class="hero-title">Let&rsquo;s find your next gap</h2>
+                <p class="hero-desc">Pick a category and market — we&rsquo;ll apply sensible defaults and surface high-demand, low-satisfaction apps.</p>
+            </section>
+
+            <!-- PRIMARY: Category + Country + Scan only -->
+            <section class="card simple-scan-card" id="simpleScanCard">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <svg class="section-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <h2 class="card-title">Start a scan</h2>
+                    </div>
+                </div>
+
+                <div class="form-group full-width-group">
+                    <div class="category-header-wrap">
+                        <span class="preset-label">Category</span>
+                        <div class="quick-preset-actions">
+                            <button type="button" class="btn-text-xs" id="selectAllCategories">Select all</button>
+                            <button type="button" class="btn-text-xs" id="quickSelectCoreCats">Productivity + Tools</button>
+                        </div>
+                    </div>
+                    <div class="checkbox-pill-group" id="categoryCheckboxesGroup">
+                        <label class="checkbox-model-pill active"><input type="checkbox" name="category" value="PRODUCTIVITY" checked><span>Productivity</span></label>
+                        <label class="checkbox-model-pill active"><input type="checkbox" name="category" value="TOOLS" checked><span>Tools &amp; Utilities</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="category" value="EDUCATION"><span>Educational</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="category" value="GAMES"><span>Games &amp; Puzzles</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="category" value="BUSINESS"><span>Business &amp; Finance</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="category" value="HEALTH"><span>Health &amp; Fitness</span></label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width-group">
+                    <div class="form-label">
+                        <span>Country / market</span>
+                        <div class="quick-preset-actions">
+                            <button type="button" class="btn-text-xs" id="quickSelectIndia">India only</button>
+                            <button type="button" class="btn-text-xs" id="quickSelectTier1">Tier-1 (US, UK, CA, AU)</button>
+                            <button type="button" class="btn-text-xs" id="selectAllCountries">Select all</button>
+                        </div>
+                    </div>
+                    <div class="checkbox-pill-group" id="countryGroup">
+                        <label class="checkbox-model-pill active"><input type="checkbox" name="country" value="in" checked><span>India (in)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="us"><span>United States (us)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="gb"><span>United Kingdom (gb)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="ca"><span>Canada (ca)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="au"><span>Australia (au)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="de"><span>Germany (de)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="fr"><span>France (fr)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="jp"><span>Japan (jp)</span></label>
+                        <label class="checkbox-model-pill"><input type="checkbox" name="country" value="br"><span>Brazil (br)</span></label>
+                    </div>
+                    <p class="form-hint">Scans regional stores in parallel and deduplicates apps automatically.</p>
+                </div>
+
+                <p class="defaults-hint" id="defaultsHint">
+                    Uses defaults: ≤3.5★ · ≥100 reviews · Paid + IAP · 50 apps
+                    <span class="defaults-hint-muted">— refine after your first scan</span>
+                </p>
+
+                <form id="searchForm" class="search-form simple-scan-form">
+                    <div class="search-actions">
+                        <button type="submit" class="btn btn-primary" id="scanBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <span>Find gaps</span>
+                        </button>
+                        <button type="button" class="btn btn-danger hidden" id="stopScanBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                                <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+                            </svg>
+                            <span>Stop Scan</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="scan-progress-box hidden" id="scanProgressBox">
+                    <div class="progress-info-row">
+                        <div class="progress-label-wrap">
+                            <div class="spinner-sm" aria-hidden="true"></div>
+                            <span class="progress-status-text" id="progressStatusText">Initializing scan...</span>
+                        </div>
+                        <span class="progress-percent-text" id="progressPercentText">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar-fill" id="progressBarFill" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-stats-row">
+                        <span>Candidates evaluated: <strong id="progressCheckedCount">0</strong></span>
+                        <span>Matches found: <strong id="progressMatchCount" class="text-emerald">0</strong></span>
+                        <span id="progressCurrentApp" class="current-app-preview"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ADVANCED: revealed after first completed scan -->
+            <section class="card advanced-filters-card hidden" id="advancedFiltersPanel" aria-hidden="true">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <svg class="section-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                        <div>
+                            <h2 class="card-title">Refine filters</h2>
+                            <p class="card-subtitle-soft">Tweak defaults and hit Find gaps again to re-run</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-text" id="resetConfigBtn" title="Reset to defaults">Reset Defaults</button>
+                </div>
+
+                <div class="config-grid" id="configCard">
+                    <div class="form-group">
+                        <label for="maxRatingInput" class="form-label">
+                            <span>Max rating <code>MAX_RATING</code></span>
+                            <span class="badge badge-warning" id="maxRatingBadge">≤ 3.5★</span>
+                        </label>
+                        <div class="slider-input-group">
+                            <input type="range" id="maxRatingSlider" min="1.0" max="4.5" step="0.1" value="3.5" class="range-slider" aria-label="Max rating slider">
+                            <input type="number" id="maxRatingInput" min="1.0" max="5.0" step="0.1" value="3.5" class="form-control number-input">
+                        </div>
+                        <p class="form-hint">Lower scores flag users who need a better alternative.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="minReviewsInput" class="form-label">
+                            <span>Min reviews <code>MIN_REVIEWS</code></span>
+                            <span class="badge badge-info" id="minReviewsBadge">≥ 100</span>
+                        </label>
+                        <div class="preset-input-group">
+                            <input type="number" id="minReviewsInput" min="10" max="50000" step="10" value="100" class="form-control" placeholder="100">
+                            <div class="preset-pills">
+                                <button type="button" class="pill-btn" data-reviews="50">50</button>
+                                <button type="button" class="pill-btn active" data-reviews="100">100</button>
+                                <button type="button" class="pill-btn" data-reviews="250">250</button>
+                                <button type="button" class="pill-btn" data-reviews="500">500</button>
+                                <button type="button" class="pill-btn" data-reviews="1000">1k</button>
+                            </div>
+                        </div>
+                        <p class="form-hint">Ensures proven demand and statistically meaningful dissatisfaction.</p>
+                    </div>
+
+                    <div class="form-group full-width-group">
+                        <label class="form-label">
+                            <span>Monetization models</span>
+                            <span class="badge badge-purple" id="priceBadge">Paid + IAP Subscriptions</span>
+                        </label>
+                        <div class="checkbox-pill-group" id="monetizationGroup">
+                            <label class="checkbox-model-pill active"><input type="checkbox" name="monetization" value="paid" checked><span>Pure paid upfront</span></label>
+                            <label class="checkbox-model-pill active"><input type="checkbox" name="monetization" value="iap" checked><span>In-app purchases / subscriptions</span></label>
+                            <label class="checkbox-model-pill"><input type="checkbox" name="monetization" value="ads"><span>Ad-supported</span></label>
+                            <label class="checkbox-model-pill"><input type="checkbox" name="monetization" value="free"><span>100% free</span></label>
+                        </div>
+                        <p class="form-hint">Keep paid + IAP selected to prioritize niches with real willingness to pay.</p>
+                    </div>
+                </div>
+
+                <div class="advanced-extra-row">
+                    <div class="search-input-wrapper advanced-keyword-wrap">
+                        <svg class="search-bar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input
+                            type="text"
+                            id="searchQueryInput"
+                            class="search-input"
+                            placeholder="Optional keyword filter (e.g. planner, timer, pro) — or leave empty"
+                            value=""
+                            autocomplete="off"
+                        >
+                        <button type="button" class="clear-input-btn" id="clearSearchBtn" title="Clear input" aria-label="Clear search">×</button>
+                    </div>
+                    <div class="search-options-group">
+                        <label class="checkbox-pill" title="Also inspect Similar &amp; Related apps recommended by Google Play">
+                            <input type="checkbox" id="deepCrawlCheck">
+                            <span>Deep crawl (similar apps)</span>
+                        </label>
+                        <div class="limit-selector-wrap">
+                            <label for="numLimitSelect" class="small-label">Inspect up to</label>
+                            <select id="numLimitSelect" class="form-control select-sm">
+                                <option value="25">25 apps</option>
+                                <option value="50" selected>50 apps</option>
+                                <option value="100">100 apps</option>
+                                <option value="150">150 apps</option>
+                                <option value="250">250 apps (max)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-preview-bar">
+                    <span class="code-label">ACTIVE CONFIG</span>
+                    <code id="activeCodeSnippet">const COUNTRY = ['in']; const CATEGORIES = ['PRODUCTIVITY', 'TOOLS']; const MAX_RATING = 3.5; const MIN_REVIEWS = 100; const MONETIZATION = ['paid', 'iap'];</code>
+                    <button type="button" class="copy-code-btn" id="copyConfigBtn" title="Copy code snippet" aria-label="Copy config">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="card results-card" id="resultsSection">
+                <div class="results-header">
+                    <div>
+                        <div class="results-title-row">
+                            <h2 class="card-title">Found Opportunities</h2>
+                            <span class="results-count-badge" id="resultsCountBadge">0 matches</span>
+                        </div>
+                        <p class="results-subtitle" id="resultsSubtitle">Apps meeting your gap criteria (rating ≤ 3.5★, reviews ≥ 100)</p>
+                    </div>
+
+                    <div class="export-actions">
+                        <button type="button" class="btn btn-emerald" id="exportCsvBtn" disabled>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Save to CSV</span>
+                        </button>
+                        <button type="button" class="btn btn-outline" id="exportXlsxBtn" disabled title="Export to Excel spreadsheet (.xlsx)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="8" y1="13" x2="16" y2="13"></line>
+                                <line x1="8" y1="17" x2="16" y2="17"></line>
+                            </svg>
+                            <span>Excel (.xlsx)</span>
+                        </button>
+                        <button type="button" class="btn btn-ghost" id="clearResultsBtn" disabled title="Clear results" aria-label="Clear results">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metrics-grid" id="metricsGrid">
+                    <div class="metric-card">
+                        <span class="metric-label">Opportunity apps</span>
+                        <div class="metric-val text-emerald" id="metricTotalApps">0</div>
+                        <span class="metric-desc">High demand / low satisfaction</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Avg opportunity rating</span>
+                        <div class="metric-val text-amber" id="metricAvgRating">0.0★</div>
+                        <span class="metric-desc">Benchmark is below 3.5★</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Frustrated audience</span>
+                        <div class="metric-val text-cyan" id="metricTotalReviews">0</div>
+                        <span class="metric-desc">Cumulative buyer ratings</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Avg monetization price</span>
+                        <div class="metric-val text-purple" id="metricAvgPrice">₹0</div>
+                        <span class="metric-desc">Proven willingness to pay</span>
+                    </div>
+                </div>
+
+                <div class="table-toolbar">
+                    <div class="search-filter-box">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="filterResultsInput" placeholder="Filter by name, developer, category..." class="table-search-input" aria-label="Filter results">
+                    </div>
+                    <div class="sort-controls">
+                        <label for="sortBySelect" class="small-label">Sort by</label>
+                        <select id="sortBySelect" class="form-control select-sm">
+                            <option value="ratings_desc">Most ratings (highest demand)</option>
+                            <option value="score_asc">Lowest rating (biggest pain)</option>
+                            <option value="score_desc">Highest rating (closest to 3.5)</option>
+                            <option value="price_desc">Highest price</option>
+                            <option value="name_asc">App title (A–Z)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table" id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px;">#</th>
+                                <th style="min-width: 240px;">App details</th>
+                                <th style="min-width: 130px;">Rating</th>
+                                <th style="min-width: 140px;">Demand (ratings)</th>
+                                <th style="min-width: 110px;">Price</th>
+                                <th style="min-width: 110px;">Category</th>
+                                <th style="min-width: 110px;">Updated</th>
+                                <th style="width: 100px; text-align: center;">Store</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <tr class="empty-row" id="emptyStateRow">
+                                <td colspan="8">
+                                    <div class="empty-state">
+                                        <div class="searching-orb" aria-hidden="true">
+                                            <span class="ripple"></span>
+                                            <span class="ripple"></span>
+                                            <span class="ripple"></span>
+                                            <div class="orb-core">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                                    <circle cx="11" cy="11" r="7"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <h3 class="empty-title">Ready when you are</h3>
+                                        <p class="empty-desc">
+                                            Choose a <strong>Category</strong> and <strong>Country / market</strong> above, then hit
+                                            <strong>Find gaps</strong>.
+                                            Defaults apply automatically
+                                            (<strong><span id="emptyCountryTxt">IN</span></strong>,
+                                            rating ≤ <strong><span id="emptyRatingTxt">3.5★</span></strong>,
+                                            reviews ≥ <strong><span id="emptyReviewsTxt">100</span></strong>).
+                                        </p>
+                                        <div class="empty-cta">Select category + country → Find gaps</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card weekly-reports-card" id="weeklyReportsSection">
+                <div class="card-header">
+                    <div class="card-title-group">
+                        <svg class="section-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <div>
+                            <h2 class="card-title">Weekly Reports</h2>
+                            <p class="card-subtitle">Publish SEO-friendly gap reports for organic traffic and backlinks</p>
+                        </div>
+                    </div>
+                    <a class="btn-text-xs" href="/reports" target="_blank" rel="noopener noreferrer" id="browseAllReportsLink">Browse all reports →</a>
+                </div>
+
+                <div class="weekly-publish-row">
+                    <div class="form-group weekly-field">
+                        <label class="preset-label" for="reportTitleInput">Report title <span class="optional-tag">optional</span></label>
+                        <input type="text" id="reportTitleInput" class="form-control" placeholder="Auto: Play Store Gaps: Category in Market — Week of …" maxlength="160" aria-label="Report title override">
+                    </div>
+                    <div class="form-group weekly-field weekly-field-sm">
+                        <label class="preset-label" for="reportWeekOfInput">Week of</label>
+                        <input type="date" id="reportWeekOfInput" class="form-control" aria-label="Week of date">
+                    </div>
+                    <div class="weekly-publish-actions">
+                        <button type="button" class="btn btn-emerald" id="publishReportBtn" disabled title="Publish current scan results as a weekly SEO report">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                            <span>Publish weekly report</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="weekly-hint" id="weeklyReportsHint">Run a scan first — then publish a crawlable report at <code>/reports/yyyy-wNN-category-country</code>.</p>
+
+                <div class="weekly-list-header">
+                    <h3 class="weekly-list-title">Recent reports</h3>
+                    <button type="button" class="btn-text-xs" id="refreshReportsBtn">Refresh</button>
+                </div>
+                <div id="weeklyReportsList" class="weekly-reports-list" aria-live="polite">
+                    <div class="weekly-empty" id="weeklyReportsEmpty">No published reports yet.</div>
+                </div>
+            </section>
+        </main>
+
+        <div class="toast-container" id="toastContainer"></div>
+
+        <div class="modal-backdrop hidden" id="appDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalAppTitle">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <div class="modal-app-brand">
+                        <img id="modalAppIcon" class="modal-app-icon" src="" alt="App icon">
+                        <div>
+                            <h3 id="modalAppTitle" class="modal-app-title"></h3>
+                            <p id="modalAppDeveloper" class="modal-app-dev"></p>
+                        </div>
+                    </div>
+                    <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-badges-row">
+                        <span class="badge badge-warning" id="modalAppRating"></span>
+                        <span class="badge badge-info" id="modalAppRatingsCount"></span>
+                        <span class="badge badge-purple" id="modalAppPrice"></span>
+                        <span class="badge badge-neutral" id="modalAppCategory"></span>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4>Package ID</h4>
+                        <div class="package-id-box">
+                            <code id="modalPackageId"></code>
+                            <button type="button" class="btn-text" id="copyPackageIdBtn">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4>App summary</h4>
+                        <p id="modalAppSummary" class="modal-summary-text"></p>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4>Market gap angle</h4>
+                        <div class="gap-analysis-box">
+                            <p>This app has demonstrated customer demand (<strong><span id="modalDemandReviews"></span> total ratings</strong>) while failing to satisfy users with a low score of <strong><span id="modalRatingScore"></span>★</strong>. A polished alternative with cleaner UX and better stability can capture share quickly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a id="modalPlayStoreLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span>Open in Google Play</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
