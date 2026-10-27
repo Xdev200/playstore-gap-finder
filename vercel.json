@@ -6,8 +6,5 @@
       "maxDuration": 300,
       "includeFiles": "{data/reports/**,public/**,lib/**}"
     }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/server.mjs" }
-  ]
+  }
 }
