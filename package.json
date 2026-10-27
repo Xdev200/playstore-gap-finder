@@ -1,7 +1,7 @@
 {
   "name": "playstore-gap-finder",
   "version": "2.1.0",
-  "description": "Find Google Play market gaps (high demand + low satisfaction) via google-play-scraper \u2014 no API key required",
+  "description": "Find Google Play market gaps (high demand + low satisfaction) via google-play-scraper — no API key required",
   "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
@@ -26,6 +26,6 @@
     "xlsx": "^0.18.5"
   },
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   }
 }
