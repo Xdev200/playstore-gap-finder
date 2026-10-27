@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "framework": "express",
+  "functions": {
+    "server.mjs": {
+      "maxDuration": 300,
+      "includeFiles": "{data/reports/**,public/**,lib/**}"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/server.mjs" }
+  ]
+}
