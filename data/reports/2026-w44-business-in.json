@@ -1,0 +1,81 @@
+{
+  "slug": "2026-w44-business-in",
+  "title": "Play Store Gaps: Business & Finance Android Market Opportunities in India — Week of Oct 27, 2026",
+  "weekOf": "2026-10-27",
+  "publishedAt": "2026-10-27T11:54:09.008Z",
+  "countries": [
+    "in"
+  ],
+  "categories": [
+    "BUSINESS"
+  ],
+  "maxRating": 3.5,
+  "minReviews": 100,
+  "monetization": [
+    "paid",
+    "iap"
+  ],
+  "totalCount": 3,
+  "apps": [
+    {
+      "priorityRank": 1,
+      "title": "Mobills: Budget Planner",
+      "appId": "br.com.gerenciadorfinanceiro.controller",
+      "developer": "3APPS SOLUTIONS",
+      "genre": "Finance",
+      "score": 3.15,
+      "ratingsCount": 293428,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=br.com.gerenciadorfinanceiro.controller&hl=en&gl=in",
+      "summary": "Manage your personal finances, create budgets, track your bills, card and money",
+      "icon": "https://play-lh.googleusercontent.com/_Kwry3ob3ptHbZO_3_0cZnjPdM7sMEDDJC_BIUPYiW0PPvCOIF7rLFyATX_EJ1EwHZL9ro3El2kDOlgryHQI"
+    },
+    {
+      "priorityRank": 2,
+      "title": "Receipt Scanner by Saldo Apps",
+      "appId": "saldo.receiptscanner.app",
+      "developer": "Saldo Apps",
+      "genre": "Finance",
+      "score": 3.46,
+      "ratingsCount": 2884,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=saldo.receiptscanner.app&hl=en&gl=in",
+      "summary": "Track expenses with ease with our smart receipt scanner and tracker!",
+      "icon": "https://play-lh.googleusercontent.com/jmCA25tN2DZAzdtAsLGzb0ih8icIzPKtodZgT6yYo0hPw7Z4ihodYee0B6VzgOtoIZoaaoyGaARB4fA4YaB5"
+    },
+    {
+      "priorityRank": 3,
+      "title": "Money Journal - Budget Planner",
+      "appId": "dimmple.bud",
+      "developer": "dimmple",
+      "genre": "Finance",
+      "score": 3,
+      "ratingsCount": 168,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=dimmple.bud&hl=en&gl=in",
+      "summary": "Expense tracker &amp; bill manager — plan your budget with no bank linking required",
+      "icon": "https://play-lh.googleusercontent.com/xKpA_En4omqZV2MUzpmXBMDSH5IFPlnUXnQPJS1vaajslnnwMiio4RZQi4XZeoZZt72DUjMI1FvBNJrfMILz3g"
+    }
+  ],
+  "metaDescription": "3 Play Store gaps in India (Business & Finance): ≥100 reviews yet ≤3.5★. Weekly Android ASO market opportunity research for founders. Cite this weekly report.",
+  "keywords": [
+    "Play Store gaps",
+    "Android market opportunities",
+    "Google Play ASO",
+    "low rated paid apps",
+    "Business & Finance apps India",
+    "Play Store gaps India",
+    "high demand low satisfaction apps",
+    "Android ASO research",
+    "market opportunity Android",
+    "India Play Store analysis",
+    "underserved Android niches",
+    "weekly Play Store report"
+  ]
+}

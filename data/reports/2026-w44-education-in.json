@@ -1,0 +1,111 @@
+{
+  "slug": "2026-w44-education-in",
+  "title": "Play Store Gaps: Education Android Market Opportunities in India — Week of Oct 27, 2026",
+  "weekOf": "2026-10-27",
+  "publishedAt": "2026-10-27T11:53:02.383Z",
+  "countries": [
+    "in"
+  ],
+  "categories": [
+    "EDUCATION"
+  ],
+  "maxRating": 3.5,
+  "minReviews": 100,
+  "monetization": [
+    "paid",
+    "iap"
+  ],
+  "totalCount": 5,
+  "apps": [
+    {
+      "priorityRank": 1,
+      "title": "codeSpark - Coding for Kids",
+      "appId": "org.codespark.thefoos",
+      "developer": "codeSpark",
+      "genre": "Educational",
+      "score": 3.44,
+      "ratingsCount": 12516,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=org.codespark.thefoos&hl=en&gl=in",
+      "summary": "Learn-to-code for kids 3-10 with 100s of educational learning games &amp; activities",
+      "icon": "https://play-lh.googleusercontent.com/4S9Q933aDZALPRW7q45bKeC85z0T0goMLmbYY2q7zMSFlHsQ_Qnr770QbSAsfLArNSGz_RMAjZD7rlx-YLxAfg"
+    },
+    {
+      "priorityRank": 2,
+      "title": "World Geography Games and Quiz",
+      "appId": "com.arctics.geolio",
+      "developer": "Pipi Chick Studio",
+      "genre": "Education",
+      "score": 3.25,
+      "ratingsCount": 1934,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=com.arctics.geolio&hl=en&gl=in",
+      "summary": "Play geography games, take a geography quiz, and learn world geography. Try now!",
+      "icon": "https://play-lh.googleusercontent.com/gq-Ovx5HlURdUFl4B-DwGm-0VNDx-kFaEVITcyYAyhO0CzTaJmClPx99XYJ36gYAllh0VJCYKcW6_5ekhn2J9SA"
+    },
+    {
+      "priorityRank": 3,
+      "title": "MathTango: Math Games for Kids",
+      "appId": "com.sagosago.MathTango.googleplay",
+      "developer": "Play Piknik",
+      "genre": "Educational",
+      "score": 3.46,
+      "ratingsCount": 628,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=com.sagosago.MathTango.googleplay&hl=en&gl=in",
+      "summary": "Kindergarten to grade five: Play fun educational monster math games for kids!",
+      "icon": "https://play-lh.googleusercontent.com/ygzTRqE9aXIohNF76v2P38yk0kw4ZqtuTEYzssI_wSkc0xGTHDDB0CO8Wb7IqTG4g9sGH8D1K99DAQ6uYK2W77U"
+    },
+    {
+      "priorityRank": 4,
+      "title": "Spelling Test & Practice PRO",
+      "appId": "air.com.littlebigplay.games.premium.spellingtest",
+      "developer": "LittleBigPlay - Word, Educational & Puzzle Games",
+      "genre": "Word",
+      "score": 3.33,
+      "ratingsCount": 203,
+      "priceText": "₹150.00",
+      "free": false,
+      "offersIAP": false,
+      "url": "https://play.google.com/store/apps/details?id=air.com.littlebigplay.games.premium.spellingtest&hl=en&gl=in",
+      "summary": "Learn English spelling! Try timed tests or practice mode. Without ads &amp; offline!",
+      "icon": "https://play-lh.googleusercontent.com/AL9qFdfkArXh6lrVN1E8FLCeLNcS7peROoKjPshMjoXbYVkS1VcHjq3OY4nEFtQd5SAJwFiEFcCmebgyG3wdWQI"
+    },
+    {
+      "priorityRank": 5,
+      "title": "Chess Coach: Learn & Play",
+      "appId": "com.dynastytechs.chesscoach",
+      "developer": "ChessCoachPro.com",
+      "genre": "Board",
+      "score": 3,
+      "ratingsCount": 135,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=com.dynastytechs.chesscoach&hl=en&gl=in",
+      "summary": "Solve chess puzzles, play offline against AI, and master chess tactics.",
+      "icon": "https://play-lh.googleusercontent.com/8ehC0C93pQxpY_IeQo8GjIWQ_Dl-UDAEKchSrjtJx9wO7warMxr_nl8mkSWuhn7XuYrLmEferwnJs3-VeN0nRw"
+    }
+  ],
+  "metaDescription": "5 Play Store gaps in India (Education): ≥100 reviews yet ≤3.5★. Weekly Android ASO market opportunity research for founders. Cite this weekly report.",
+  "keywords": [
+    "Play Store gaps",
+    "Android market opportunities",
+    "Google Play ASO",
+    "low rated paid apps",
+    "Education apps India",
+    "Play Store gaps India",
+    "high demand low satisfaction apps",
+    "Android ASO research",
+    "market opportunity Android",
+    "India Play Store analysis",
+    "underserved Android niches",
+    "weekly Play Store report"
+  ]
+}
