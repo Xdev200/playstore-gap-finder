@@ -1,0 +1,81 @@
+{
+  "slug": "2026-w44-productivity-in",
+  "title": "Play Store Gaps: Productivity Android Market Opportunities in India — Week of Oct 27, 2026",
+  "weekOf": "2026-10-27",
+  "publishedAt": "2026-10-27T11:54:39.039Z",
+  "countries": [
+    "in"
+  ],
+  "categories": [
+    "PRODUCTIVITY"
+  ],
+  "maxRating": 3.5,
+  "minReviews": 100,
+  "monetization": [
+    "paid",
+    "iap"
+  ],
+  "totalCount": 3,
+  "apps": [
+    {
+      "priorityRank": 1,
+      "title": "Unicorn Blocker:Adblocker, Fas",
+      "appId": "kr.co.lylstudio.unicorn",
+      "developer": "Unicorn Soft, Inc.",
+      "genre": "Productivity",
+      "score": 3.3,
+      "ratingsCount": 10035,
+      "priceText": "₹220.00",
+      "free": false,
+      "offersIAP": false,
+      "url": "https://play.google.com/store/apps/details?id=kr.co.lylstudio.unicorn&hl=en&gl=in",
+      "summary": "* block pre-roll ads, pop-up and forced redirect ads\n* Samsung certification app",
+      "icon": "https://play-lh.googleusercontent.com/mjzlXKAgeuylW57jetcm13xsJxtLIR5l3tyjI4Gra6DQa_VV25OLR8AaoO4F-ht2mQ1Ldghrr5aVCeO5s7R2M4g"
+    },
+    {
+      "priorityRank": 2,
+      "title": "Penly: Digital Planner & Notes",
+      "appId": "com.penly.penly",
+      "developer": "Penly",
+      "genre": "Productivity",
+      "score": 3.49,
+      "ratingsCount": 3805,
+      "priceText": "₹550.00",
+      "free": false,
+      "offersIAP": false,
+      "url": "https://play.google.com/store/apps/details?id=com.penly.penly&hl=en&gl=in",
+      "summary": "Note-taking, PDF Editor, Digital Planner, PDF annotation, notebook &amp; journal.",
+      "icon": "https://play-lh.googleusercontent.com/V4Ygi2nEQNkAwkywnrrrUqjDmGH1BQGrAiVUWdr1YgvU-DaVKgu-MWsqa-L6mzqgoidQSnNQfvjVDmEKO40eBDc"
+    },
+    {
+      "priorityRank": 3,
+      "title": "UPDF - AI-Powered PDF Editor",
+      "appId": "com.superace.updf",
+      "developer": "Superace Software Technology Co., Ltd.",
+      "genre": "Productivity",
+      "score": 3.17,
+      "ratingsCount": 2304,
+      "priceText": "Free",
+      "free": true,
+      "offersIAP": true,
+      "url": "https://play.google.com/store/apps/details?id=com.superace.updf&hl=en&gl=in",
+      "summary": "Manage PDFs On the Go",
+      "icon": "https://play-lh.googleusercontent.com/CYiIuD1Gx2QLSlm9uTmZ2fjNh0cgis8qMEldHfDgBj6phdf4uFGN0MqFKm_GnAeJbqU9MCryl2FXMx1sXJJc6w"
+    }
+  ],
+  "metaDescription": "3 Play Store gaps in India (Productivity): ≥100 reviews yet ≤3.5★. Weekly Android ASO market opportunity research for founders. Cite this weekly report.",
+  "keywords": [
+    "Play Store gaps",
+    "Android market opportunities",
+    "Google Play ASO",
+    "low rated paid apps",
+    "Productivity apps India",
+    "Play Store gaps India",
+    "high demand low satisfaction apps",
+    "Android ASO research",
+    "market opportunity Android",
+    "India Play Store analysis",
+    "underserved Android niches",
+    "weekly Play Store report"
+  ]
+}
